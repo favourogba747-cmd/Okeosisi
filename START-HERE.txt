@@ -1,0 +1,7 @@
+OKEOSISI GENERAL SERVICE NIGERIA LIMITED — WEBSITE
+
+Open index.html in a browser. Keep the HOMEPAGE, ABOUT and assets folders in the same project folder as the HTML pages.
+
+Pages: Home, Our Heritage, The Collection, Showcase, Our People and Enquiries. The Collection has category filters, live search and image previews. Showcase has visual filters and image previews. The homepage hero rotates through three featured furniture images and visitors can select a slide manually.
+
+The unprofessional door photograph with the generator in the background has been removed. Enquiries are handled by phone and WhatsApp; pricing is quoted individually.

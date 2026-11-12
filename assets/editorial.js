@@ -1,0 +1,7 @@
+(() => {
+ const menu=document.querySelector('.menu-toggle'),nav=document.querySelector('.site-nav');
+ if(menu&&nav)menu.addEventListener('click',()=>{const open=nav.classList.toggle('open');menu.setAttribute('aria-expanded',String(open));menu.textContent=open?'×':'☰'});
+ document.querySelectorAll('.filter-btn').forEach(btn=>btn.addEventListener('click',()=>{document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));btn.classList.add('active');const filter=btn.dataset.filter;document.querySelectorAll('.showcase-tile').forEach(tile=>tile.hidden=filter!=='all'&&tile.dataset.kind!==filter)}));
+ const lightbox=document.querySelector('.lightbox');if(lightbox){const image=lightbox.querySelector('img'),caption=lightbox.querySelector('p');document.querySelectorAll('.showcase-tile').forEach(tile=>tile.addEventListener('click',()=>{image.src=tile.querySelector('img').src;image.alt=tile.querySelector('img').alt;caption.textContent=tile.dataset.caption||tile.querySelector('.showcase-caption').innerText;lightbox.classList.add('open');document.body.style.overflow='hidden'}));const close=()=>{lightbox.classList.remove('open');document.body.style.overflow=''};lightbox.querySelector('button').addEventListener('click',close);lightbox.addEventListener('click',e=>{if(e.target===lightbox)close()});document.addEventListener('keydown',e=>{if(e.key==='Escape')close()})}
+ document.querySelectorAll('[data-year]').forEach(el=>el.textContent=new Date().getFullYear());
+})();

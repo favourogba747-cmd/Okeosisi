@@ -1,0 +1,9 @@
+OKEOSISI WEBSITE — GITHUB UPLOAD INSTRUCTIONS
+
+This package preserves the original website folder structure.
+IMPORTANT: Copy the CONTENTS of this folder into the ROOT of your cloned Okeosisi GitHub repository.
+Do not put this whole folder inside another Okeosisi folder. index.html must sit directly in the repository root.
+
+Keep these folders exactly as they are: assets/, ABOUT/, and HOMEPAGE/.
+The main pages are index.html, about.html, collections.html, gallery.html, contact.html, and leadership.html.
+After copying, review changes in GitHub Desktop, commit to main, then Push origin. Vercel should redeploy from the connected repository.
